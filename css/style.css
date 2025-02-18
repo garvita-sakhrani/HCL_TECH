@@ -1,0 +1,253 @@
+/* General CSS Starts */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, Courier, monospace;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+.container {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+/* General CSS Ends */
+
+/* Home Section CSS Starts */
+.home {
+  padding: 2rem 0rem;
+  color: white;
+  background: linear-gradient(to right, #7c58e5, #6324c2, #115fde, #4ca4ff);
+}
+/* Banner Section CSS */
+.banner_grid {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  align-items: center;
+}
+
+.home h2 {
+  font-size: 7rem;
+  font-weight: 500;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+.home h4 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  width: 90%;
+  margin-bottom: 7rem;
+}
+.text {
+  padding: 2rem 0;
+}
+.image img {
+  width: 100%;
+}
+/* Home Section CSS Ends */
+
+/* About section CSS starts */
+.about_top {
+  padding: 3rem 0rem;
+}
+.about_top p {
+  font-size: 2rem;
+  width: 99%;
+}
+/* Service Section CSS Starts */
+.services h5 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.service_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  color: white;
+}
+.service_card {
+  padding: 3rem;
+}
+.service_card i {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 4rem;
+}
+.service_card h4 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 2.8rem;
+  font-weight: 550;
+}
+.service_card:first-child {
+  background-color: #7546d2;
+}
+.service_card:nth-child(2) {
+  background-color: #2974e6;
+}
+.service_card:last-child {
+  background-color: #4b94ef;
+}
+.service_card ul {
+  padding: 2rem 4rem;
+}
+.service_card li {
+  padding: 1rem 0;
+  font-size: 2rem;
+  font-weight: 400;
+  width: 90%;
+}
+.services p {
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+/* Service Section CSS Ends */
+
+/* features section css starts */
+.features {
+  padding: 4rem 0rem;
+}
+.features h5 {
+  font-size: 2.5rem;
+}
+.feature_cards {
+  padding: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  gap: 0.5rem;
+}
+.feature_card {
+  padding: 2.8rem 2.8rem;
+  padding-bottom: 10rem;
+}
+.feature_card:nth-child(odd) {
+  background-color: #f6fafd;
+}
+.feature_card:nth-child(even) {
+  background-color: #eff1f4;
+}
+.feature_card h5 {
+  display: inline-block;
+  vertical-align: middle;
+  color: black;
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+.feature_card i {
+  display: inline-block;
+  vertical-align: middle;
+  color: #6b35c9;
+  font-size: 2.5rem;
+}
+.feature_card span {
+  font-weight: 500;
+}
+.features p {
+  font-size: 2rem;
+}
+.features p a {
+  text-decoration: none;
+  color: #6b35c9;
+}
+.feature_card p {
+  font-size: 2rem;
+  padding-bottom: 1.7rem;
+  width: 91%;
+}
+.feature_card button {
+  color: white;
+  background-color: #6b35c9;
+  padding: 1rem;
+  border: none;
+  margin-bottom: 2.5rem;
+}
+.modified {
+  padding-top: 2rem;
+}
+/* features section css ends */
+
+/* details section css starts */
+.details {
+  padding-bottom: 3.5rem;
+}
+.details h5 {
+  font-size: 2.5rem;
+}
+.details p {
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+.details a {
+  text-decoration: none;
+  color: #6b35c9;
+}
+/* Details section css ends */
+
+/* Footer section css starts */
+footer {
+  background: linear-gradient(to right, #6324c2, #115fde);
+  height: 2rem;
+}
+/* footer section css ends */
+
+/* Responsiveness css starts */
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  .service_cards {
+    grid-template-columns: 1fr;
+  }
+  .feature_cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .banner_grid {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+@media screen and (max-width: 850px) {
+  .banner_grid {
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .feature_cards {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 5px;
+  }
+  .logo {
+    width: 90%;
+  }
+  .image {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+/* REsponsiveness css ends */
